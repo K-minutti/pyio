@@ -3,7 +3,7 @@ import React
 
 @objc(PythonRunnerModule)
 class PythonRunnerModule: NSObject, RCTBridgeModule {
-    static func moduleName() -> String {
+    @objc static override func moduleName() -> String {
         return "PythonRunnerModule"
     }
 
@@ -11,5 +11,9 @@ class PythonRunnerModule: NSObject, RCTBridgeModule {
         let pythonInterpreter = PythonInterpreter()
         let result = pythonInterpreter.runScript(script)       
         resolver(result)
+    }
+
+    @objc static func requiresMainQueueSetup() -> Bool {
+        return true
     } 
 }

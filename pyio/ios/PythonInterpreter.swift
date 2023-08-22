@@ -8,7 +8,7 @@ class PythonInterpreter {
         
         // Capture the current stdout
         let originalStdout = sys.stdout
-      let capturedOutput: PythonObject = PythonObject("")
+        let capturedOutput: PythonObject = PythonObject("")
         sys.stdout = capturedOutput
         
         // Execute the Python script

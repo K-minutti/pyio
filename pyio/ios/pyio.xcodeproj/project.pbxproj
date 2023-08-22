@@ -10,8 +10,6 @@
 		00E356F31AD99517003FC87E /* pyioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* pyioTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-pyio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-pyio.a */; };
 		124E263A2A92E16800D3ABBC /* PythonRunnerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124E26392A92E16800D3ABBC /* PythonRunnerModule.swift */; };
-		124E263C2A92E44300D3ABBC /* Python3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124E263B2A92E44300D3ABBC /* Python3.framework */; };
-		124E263D2A92E44300D3ABBC /* Python3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 124E263B2A92E44300D3ABBC /* Python3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		12BA91E72A92E80E00D960A5 /* PythonInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BA91E62A92E80E00D960A5 /* PythonInterpreter.swift */; };
 		12BA91EA2A92EF2400D960A5 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 12BA91E92A92EF2400D960A5 /* PythonKit */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
@@ -30,20 +28,6 @@
 			remoteInfo = pyio;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		124E263E2A92E44300D3ABBC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				124E263D2A92E44300D3ABBC /* Python3.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* pyioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pyioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				124E263C2A92E44300D3ABBC /* Python3.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-pyio.a in Frameworks */,
 				12BA91EA2A92EF2400D960A5 /* PythonKit in Frameworks */,
 			);
@@ -213,7 +196,6 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
-				124E263E2A92E44300D3ABBC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,7 +236,7 @@
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			packageReferences = (
-				12BA91E82A92EF2400D960A5 /* XCRemoteSwiftPackageReference "PythonKit" */,
+				12BA91E82A92EF2400D960A5 /* XCRemoteSwiftPackageReference "PythonKit.git" */,
 			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
@@ -751,7 +733,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		12BA91E82A92EF2400D960A5 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+		12BA91E82A92EF2400D960A5 /* XCRemoteSwiftPackageReference "PythonKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pvieito/PythonKit.git";
 			requirement = {
@@ -764,7 +746,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		12BA91E92A92EF2400D960A5 /* PythonKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 12BA91E82A92EF2400D960A5 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			package = 12BA91E82A92EF2400D960A5 /* XCRemoteSwiftPackageReference "PythonKit.git" */;
 			productName = PythonKit;
 		};
 /* End XCSwiftPackageProductDependency section */
